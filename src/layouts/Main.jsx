@@ -16,6 +16,7 @@ import stay1 from '../assets/images/stay1.png';
 import stay2 from '../assets/images/stay2.png';
 import stay3 from '../assets/images/stay3.png';
 import ruReady from '../assets/images/ruReady.png';
+import get15 from '../assets/images/get15.png';
 
 
 const Main = () => {
@@ -161,6 +162,19 @@ const Main = () => {
                 </div>
                 <div>
                     <img className='mx-auto w-[400px]' src={ruReady} alt="" />
+                </div>
+            </section>
+
+            {/* Get 15min section */}
+
+            <section className='bg-[#FAF8F6] grid grid-cols-2 mx-24 mb-40 rounded-3xl'>
+                <div className="px-12 py-24 flex flex-col items-start justify-center">
+                    <h2 className='text-3xl text-[#333461] font-bold'>Get 15-Minutes Complimentary online session.</h2>
+                    <span className='mt-6 text-lg text-gray-400'>Limited Period Offer. Claim Now.</span>
+                    <button className='mt-5 bg-[#20AD96] text-[14px] text-white px-20 py-2 rounded-md'>Book now</button>
+                </div>
+                <div>
+                    <img className="rounded-3xl" src={get15} alt="" />
                 </div>
             </section>
         </div>
