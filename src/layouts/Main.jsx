@@ -17,6 +17,7 @@ import stay2 from '../assets/images/stay2.png';
 import stay3 from '../assets/images/stay3.png';
 import ruReady from '../assets/images/ruReady.png';
 import get15 from '../assets/images/get15.png';
+import Footer from '../components/Footer';
 
 
 const Main = () => {
@@ -181,7 +182,7 @@ const Main = () => {
             </section>
 
             {/* Get Notified Section */}
-            <section className='bg-[#FAF8F6] px-24 py-14 grid grid-cols-2 mb-40'>
+            <section className='bg-[#FAF8F6] px-24 py-14 grid grid-cols-2 mb-10'>
                 <div>
                     <h3 className='text-2xl text-[#333461] font-bold'>Get notified when I publish new articles</h3>
                     <p className='text-md font-medium'>Stay up to date with the latest news, announcements, and articles.</p>
@@ -191,6 +192,8 @@ const Main = () => {
                     <button className='bg-[#20AD96] h-10 ml-3 text-[14px] text-white px-12 py-2 rounded-md'>Subscribe</button>
                 </form>
             </section>
+
+            <Footer></Footer>
         </div>
     );
 };
