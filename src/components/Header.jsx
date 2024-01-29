@@ -5,7 +5,7 @@ import Button from './Button';
 
 const Header = () => {
     return (
-        <header className='border px-20 flex justify-between items-center h-14'>
+        <header className='px-20 flex justify-between items-center h-14'>
             <Link className='flex'>
                 <img src={icon} alt="" />
                 <span className='font-bold ml-2'>Happy Coaching</span>
