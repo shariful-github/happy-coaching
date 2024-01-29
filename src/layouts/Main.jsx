@@ -15,6 +15,8 @@ import '@smastrom/react-rating/style.css';
 import stay1 from '../assets/images/stay1.png';
 import stay2 from '../assets/images/stay2.png';
 import stay3 from '../assets/images/stay3.png';
+import ruReady from '../assets/images/ruReady.png';
+
 
 const Main = () => {
     return (
@@ -145,6 +147,20 @@ const Main = () => {
                 </div>
                 <div className='text-center'>
                     <button className='bg-[#20AD96] text-[14px] text-white px-16 py-2 rounded-md'>Read more blogs</button>
+                </div>
+            </section>
+
+            {/* Dont miss section */}
+            <section className='grid grid-cols-2 mb-40'>
+                <div className="pl-32 flex flex-col items-center justify-center">
+                    <h1 className='mx-auto leading-tight font-bold text-[44px] text-[#333461] mt-5'>Don’t miss out on my ‘Live life at the full potential’ free guide</h1>
+                    <p className='text-lg mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.
+                    </p>
+                    <p className='mt-4 leading-tight'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <button className='mt-5 bg-[#20AD96] text-[14px] text-white px-16 py-2 rounded-md'>Get your free guide now</button>
+                </div>
+                <div>
+                    <img className='mx-auto w-[400px]' src={ruReady} alt="" />
                 </div>
             </section>
         </div>
