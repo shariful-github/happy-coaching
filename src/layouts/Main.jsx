@@ -20,6 +20,9 @@ import get15 from '../assets/images/get15.png';
 
 
 const Main = () => {
+    const handleOnSubmit = (event) =>{
+        event.preventDefault();
+    }
     return (
         <div className='text-gray-600'>
             <Header></Header>
@@ -166,7 +169,6 @@ const Main = () => {
             </section>
 
             {/* Get 15min section */}
-
             <section className='bg-[#FAF8F6] grid grid-cols-2 mx-24 mb-40 rounded-3xl'>
                 <div className="px-12 py-24 flex flex-col items-start justify-center">
                     <h2 className='text-3xl text-[#333461] font-bold'>Get 15-Minutes Complimentary online session.</h2>
@@ -176,6 +178,18 @@ const Main = () => {
                 <div>
                     <img className="rounded-3xl" src={get15} alt="" />
                 </div>
+            </section>
+
+            {/* Get Notified Section */}
+            <section className='bg-[#FAF8F6] px-24 py-14 grid grid-cols-2 mb-40'>
+                <div>
+                    <h3 className='text-2xl text-[#333461] font-bold'>Get notified when I publish new articles</h3>
+                    <p className='text-md font-medium'>Stay up to date with the latest news, announcements, and articles.</p>
+                </div>
+                <form onSubmit={handleOnSubmit} className='flex items-center justify-end'>
+                    <input className='border px-6 py-2 h-10 w-72 rounded-md' type="email" placeholder='Enter your email' />
+                    <button className='bg-[#20AD96] h-10 ml-3 text-[14px] text-white px-12 py-2 rounded-md'>Subscribe</button>
+                </form>
             </section>
         </div>
     );
