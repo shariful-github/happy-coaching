@@ -4,7 +4,7 @@ import icon from '../assets/icons/h_c_icon.png'
 
 const Footer = () => {
     return (
-        <footer className='grid grid-cols-3 mx-24 pb-32'>
+        <footer className='grid md:grid-cols-3 grid-cols-1 mx-24 pb-32 gap-10 md:gap-0'>
             <div>
                 <Link className='flex items-center'>
                     <img className='w-5' src={icon} alt="" />
@@ -12,7 +12,7 @@ const Footer = () => {
                 </Link>
                 <p className='text-gray-300 mt-7'>Design amazing digital experiences that create more happy in the world.</p>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 items-start">
                 <h5 className='font-bold text-sm'>Pages</h5>
                 <Link className='text-gray-400'>Home</Link>
                 <Link className='text-gray-400'>Services</Link>
@@ -20,7 +20,7 @@ const Footer = () => {
                 <Link className='text-gray-400'>Extra Sales/Landingpage</Link>
                 <Link className='text-gray-400'>Free guide</Link>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 items-start">
                 <h5 className='font-bold text-sm'>Contact</h5>
                 <Link className='text-gray-400'>+123 456 789</Link>
                 <Link className='text-gray-400'>hello@happydigital.nl</Link>
